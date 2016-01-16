@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/themes/Chamoda.min.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link href="bower_components/jquery-mobile/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
+<!--        <link href="bower_components/jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" />-->
+        <script src="bower_components/jquery/dist/jquery.min.js" ></script>
+        <script src="bower_components/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    </head>
+    <body>
+        <!-- Start of first page -->
+        <div data-role="page" id="home" class="ui-page-theme-c">
+
+            <div data-role="header" class="training-header">
+                <img src="assets/rsz_chamoda.jpg" class="header-image"/>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content  ui-page-theme-c" data-form="ui-page-theme-c" role="main">
+                <div data-form="ui-body-c" class="ui-body ui-body-c ui-corner-all" >
+                    <h2 style="text-align: center;">Welcome!</h2>
+                    <img src="assets/rsz_store.jpg" width="100%" height="40%"/>
+                    <p style="text-transform: none;">This is the official Gummy Bear App for the Chamoda's Candy Cafe!</p>
+                    <p style="text-transform: none;"><strong>Mon-Sat Hours:</strong> 10:00am - 6:00pm</p>
+                </div>
+            </div><!-- /content -->
+            
+            <div data-position="fixed" data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+                        <li><a href="#aboutus" data-icon="tag">About Us</a></li>
+                        <li><a href="#map-page" data-icon="location">Location</a></li>
+                        <li><a href="#settings" data-icon="gear">Settings</a></li>
+                    </ul>
+                </div>
+                <div id="deviceready" class="blink">
+                    <p class="event listening">Connecting to Device</p>
+                    <p class="event received">Device is Ready</p>
+                </div>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+    
+    <!-- Start of first page -->
+        <div data-role="page" id="aboutus" class="ui-page-theme-c">
+
+            <div data-role="header" class="training-header">
+<!--                <h1>Bikram Yoga</h1>-->
+                <img src="assets/rsz_chamoda.jpg" class="header-image"/>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content  ui-page-theme-c" data-form="ui-page-theme-c" role="main">
+                <div data-role="tabs" id="tabs">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#about" data-ajax="false" class="ui-btn-active">About</a></li>
+                            <li><a href="#rates" data-ajax="false">Rates</a></li>
+                        </ul>
+                    </div>
+                    <div id="about" class="ui-body-b ui-conent ui-corner-all">
+                        <div data-form="ui-body-c" class="ui-body ui-body-c ui-corner-all" >
+                        <h3>About The Shop</h3>
+                            <p style="text-transform: none;">We opened this shop, because we believe in following the dream that won't let you forget. It took the loss of Chamoda Palmore to realize the importance of not wasting any moment.</p>
+                            <p style="text-transform: none;">Worlds Largest and Best Selection of Gummy's. Over 16+different flavored Gummy bears! Gourmet Chocolate! , Gourmet Salt Water Taffy! Gourmet Coffee!</p>
+                        <p style="text-transform: none;">Visit Chamoda's Candy Café and indulge in your favorite candies and coffee! Largest and best assortment of gummy bears! Visit us 7 days a week!</p>
+                        </div>
+                    </div>
+                    <div id="rates">
+                        <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#">
+                            <h2 style="text-transform: none;">$7.99 - lb. of Gourmet Gummies</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h2 style="text-transform: none;">$9.99 - lb. of Gourmet Chocolate</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="calendar-button">
+                            <h2 style="text-transform: none;">$8.99 - lb. of Salt Water Taffy</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h2 style="text-transform: none;">$2.99 - Cup of Gourmet Coffee</h2>
+                        </a>
+                    </li>
+                </ul>
+                    </div>
+                </div>
+            </div><!-- /content -->
+            
+            <div data-position="fixed" data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home" >Home</a></li>
+                        <li><a href="#aboutus" data-icon="tag" class="ui-btn-active">About Us</a></li>
+                        <li><a href="#map-page" data-icon="location">Location</a></li>
+                        <li><a href="#settings" data-icon="gear">Settings</a></li>
+                    </ul>
+                </div>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+    
+        <!-- Start of first page -->
+        <div data-role="page" id="settings" class="ui-page-theme-a">
+
+            <div data-role="header" class="training-header">
+<!--                <h1>Bikram Yoga</h1>-->
+                <img src="assets/rsz_chamoda.jpg" class="header-image"/>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content  ui-page-theme-a" data-form="ui-page-theme-b" role="main">
+                <div data-form="ui-body-a" class="ui-body ui-body-a ui-corner-all" >
+                    <form>
+                        <label for="text-basic">Name</label>
+                        <input type="text" name="text-basic" id="text-basic" value="Sean Nunley">
+                        <label for="text-basic">Address</label>
+                        <input type="text" name="text-basic" id="text-basic" value="1481 Valdosta Dr.">
+                        <label for="text-basic">City</label>
+                        <input type="text" name="text-basic" id="text-basic" value="Cincinnati">
+                        <label for="text-basic">State</label>
+                        <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+                            <option>Ohio</option>
+                        </select>
+                        <label for="text-basic">Favorite Gummy</label>
+                        <select name="select-choice-a" id="select-choice-b" data-native-menu="false">
+                            <option>Select...</option>
+                            <option>Green Apple</option>
+                            <option>Blueberry</option>
+                            <option>Cherry</option>
+                            <option>Pineapple</option>
+                            <option>Strawberry</option>
+                            <option>Orange</option>
+                            <option>Chocolate</option>
+                            <option>Sour</option>
+                        </select>
+                    </form>
+                </div>
+            </div><!-- /content -->
+            
+            <div data-position="fixed" data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#aboutus" data-icon="tag">About Us</a></li>
+                        <li><a href="#map-page" data-icon="location">Location</a></li>
+                        <li><a href="#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
+                    </ul>
+                </div>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+
+        <!-- Start of second page -->
+        <div data-role="page" id="map-page" data-url="map-page" class="ui-page-theme-b">
+
+            <div data-role="header">
+                <a href="#home" class="ui-btn">Home</a><h1>Location</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content" id="map-canvas">
+                
+            </div><!-- /content -->
+
+            <div data-position="fixed" data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#aboutus" data-icon="tag">About Us</a></li>
+                        <li><a href="#map-page" data-icon="location" class="ui-btn-active">Location</a></li>
+                        <li><a href="#settings" data-icon="gear">Settings</a></li>
+                    </ul>
+                </div>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
